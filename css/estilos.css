@@ -1,0 +1,471 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+ body {
+    background-color: #ff8800;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 1.6;
+    color: #fff;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.w40{
+    float:none;
+    margin: 2%;
+    padding: 2%;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+}
+
+.w60{
+    float:none;
+    margin: 2%;
+    padding: 2%;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+}
+
+.white {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    color: #000;
+    background: #fff;
+    background: rgba(250,250,250,0.6);
+}
+
+.black {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0,0.6);
+}
+
+.intro-text {
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.8);
+}
+
+footer .copyright {
+    margin: 0;
+    padding: 20px 0;
+    color: #000;
+}
+
+ul.icons {
+    padding: 20px 0;
+    list-style: none;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1.25em 0 0;
+    font-size: 1.75em;
+}
+
+ul.icons li a {
+    text-decoration: none;
+}
+
+
+form input {
+    border: 5px solid #BDBDBD;
+    color: #fff;
+    background-color: #A4A4A4;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+form input:focus {
+    border: 5px solid #FFFFFF;
+    color: #fff;
+    background-color: #2E2E2E;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+@media screen and (min-width:768px) {
+
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #000;
+        background: rgba(0,0,0,0.3);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .w40{
+        float:left;
+        width: 35%;
+    }
+
+    .w60{
+        float:left;
+        width: 55%;
+    }
+
+    h3 {
+        font-size: 3em;
+        line-height: 1.6;
+        color: #fff;
+    }
+    h5 {
+        font-size: 2em;
+        line-height: 1.6;
+        color: #fff;
+    }
+    h4 {
+        font-size: 2.5em;
+        line-height: 1.6;
+        color: #fff;
+    }
+}
+
+/*  STYLE PLAYERS   */
+
+
+@font-face {
+    font-family: 'Amaranth';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Amaranth'), local('Amaranth'), url(https://fonts.googleapis.com/css) ;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.on{
+    font-family: 'Amaranth', serif;
+    color: #fff;
+    text-shadow: 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 5px 5px 10px #2ECCFA, -5px -5px 10px #2ECCFA;
+}
+
+.off{
+    font-family: 'Amaranth', serif;
+    color: #c7c7c7;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 8px 7px #001135;
+}
+.st1-vol {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #2ECCFA;
+    border-radius: 9px;
+    background-color: Transparent;
+    color:  #fff ;
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 8px 7px #001135;
+}
+.st1-vol:active {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #2ECCFA;
+    border-radius: 9px;
+    background-color: Transparent;
+    color:  #2ECCFA ;
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 4px 4px #001135;
+}
+
+st1-active {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #2ECCFA;
+    border-radius: 9px;
+    background-color: Transparent;
+    color:  #2ECCFA;
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 4px 4px #001135;
+}
+
+.st1-button {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 9px;
+    background-color: Transparent;
+    color:  #fff !important; 
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow:  1px 1px 2px black, -1px -1px 2px black;
+    box-shadow: 2px 2px 9px #fff, -2px -2px 9px #fff;
+}
+.st1-buttpause {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 9px;
+    background-color: Transparent;
+    color:  #fff !important;
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow:  1px 1px 2px black, -1px -1px 2px black;
+    box-shadow: 1px 1px 6px #fff, -1px -1px 6px #fff;
+}
+.st1-buttoff {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #c7c7c7;
+    border-radius: 9px;
+    background-color: Transparent;
+    color: #FFFFFF;
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 8px 7px #001135;
+}
+
+/*  FIN STYLE PLAYER  */
+
+
+/* INICIO ACORDEON CHAT */
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: -10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position:relative;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color:  #2ECCFA;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 0px;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block;
+}
+
+
+
+/* FIN ACORDEON CHAT */
+
+/* LOGO Y FONDO */
+
+#logo {
+    margin:3em auto;
+}
+
+@media (min-device-width: 700px) and (orientation: landscape)  {
+    #logo {
+        z-index:100;
+        width: 30%; /* notebook */
+    }
+}
+@media (max-device-width: 700px) {
+    #logo {
+        width: 60%; /* moviles 
+    }
+    body {
+        background-position:top;
+        -webkit-background-size:300% auto;
+        -moz-background-size: 300% auto;
+        background-size: 300% auto;
+        -o-background-size: 300% auto;
+        background-color: #ff8800;
+    }
+
+    #img_logo {
+        /* width: 90% !important; */
+    }
+}
+
+#img_logo {
+    width: 150px;
+    position: relative;
+    left: 49%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+}
+.fa-5x {
+    font-size: 5em;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.st1-buttoff {
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #c7c7c7;
+    border-radius: 9px;
+    background-color: Transparent;
+    color: #FFFFFF;
+    padding: 1% 2%;
+    margin-right: 2%;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 8px 7px #001135;
+}
