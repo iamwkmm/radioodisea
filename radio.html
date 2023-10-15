@@ -1,75 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KQ2WXKPQ');</script>
-    <!-- End Google Tag Manager -->
-        </script>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:url" content="https://radioodisea.cl/radio.html" />
-        <meta property="og:type" content="radio" />
-        <meta property="og:image" content=""/>
-        <meta property="og:image:width" content="1600">
-        <meta property="og:image:height" content="800">
-
-        <!-- Browser Color - Chrome, Firefox OS, Opera -->
-        <meta name="theme-color" content="#ff8800">
-        <!-- Browser Color - Windows Phone -->
-        <meta name="msapplication-navbutton-color" content="#ff8800">
-        <!-- Browser Color - iOS Safari -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#C5014B">
-        <!-- favicon -->
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-        <link rel="manifest" href="/assets/img/favicon/favicon-32x32.png">
-        <title>Radio Odisea Online</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/estilos.css" rel="stylesheet">
-        <!-- Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-        <link href="../css/styles.css" rel="stylesheet" />
-
-
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ2WXKPQ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-        <!--  PLAYER RADIO -->
-        <div><img id="img_logo" src="assets/img/fm.png" /></div>
-
-        <div style="position: fixed; width: 90%; height: 81px; bottom: 15px; left: 5%; background-color: #509b02; border-radius: 15px; padding-top: 10px; padding-left: 10px; padding-right: 5px;">
-            <center>
-                <div>
-                    <audio autoplay preload="none" id="ro" onplay="document.getElementById('ro1').className='fa fa-play fa-5x st1-button'; document.getElementById('ro2').className='fa fa-pause fa-5x st1-buttoff';
-                           document.getElementById('music').className='on'" onpause="document.getElementById('ro1').className='fa fa-play fa-5x st1-buttoff'; document.getElementById('ro2').className='fa fa-pause fa-5x st1-buttpause'" >
-                        <source src="http://streaming.comunicacioneschile.net:8024/stream" type="audio/mp3">
-                    </audio>
-                    <button style="background-color: #000; border-color: #fff; color: #C0C0C0;" id="ro1" onmouseup="" class="fa fa-play fa-5x st1-buttoff" onclick="document.getElementById('ro').play()"></button>
-                    <button style="background-color: #000; border-color: #fff; color: #C0C0C0;" id="ro2" onmouseup="document.getElementById('music').className = 'off'"  class="fa fa-pause fa-5x st1-buttoff" onclick="document.getElementById('ro').pause()"> </button>
-                    <button style="background-color: #000; border-color: #fff; color: #C0C0C0;" id="ro5" class="fa fa-refresh fa-5x st1-buttoff" onclick="document.getElementById('ro').src = 'streaming.comunicacioneschile.net:8024/stream';" value="Refrescar Player 1"></button>
+<head>
+    <!--google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Radio+Canada&display=swap" rel="stylesheet">
+    <!--fin google-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Radio Odisea</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Radio.css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img id="img_logo" src="assets/img/fm.png" />
+                        <audio autoplay id="reproductor" controls>
+                            <source autoplay src="http://streaming.comunicacioneschile.net:8024/stream" type="audio/mp3">
+                            Tu navegador no soporta el elemento audio.
+                        </audio>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button id="play" class="btn btn-primary"><i class="fa fa-play"></i></button>
+                        <button id="pause" class="btn btn-danger"><i class="fa fa-pause"></i></button>
+                        <button id="stop" class="btn btn-secondary"><i class="fa fa-stop"></i></button>
+                        <div class="card-footer text-center">
+                            <a class="btn sociales btn-primary" target="_blank" id="face" href="https://www.facebook.com/odisea.huepil" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a class="btn sociales btn-danger" target="_blank" id="wasa" href="https://web.whatsapp.com/send?phone=56966565978" ><i class="fa fa-whatsapp"></i></a>
+                            <a class="btn sociales btn-secondary" target="_blank" id="insta" href="https://www.instagram.com/odiseartv/"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </center>
+            </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </div>
+    
+    <script src="/js/boostrap/bootstrap.bundle.min.js"></script>
+    <script src="/js/radio.js"></script>
+</body>
 </html>

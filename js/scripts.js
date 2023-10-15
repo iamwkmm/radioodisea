@@ -43,6 +43,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 $(document).ready(function () {
     $("a.external").click(function () {
-        window.open("./radio.html", "ventana1", "width=350,height=650,scrollbars=NO");
+        window.open("radio.html", "ventana1", "width=350,height=650,scrollbars=NO");
     });
 });
